@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+
+    <!--Trang Dang Nhap-->
+    <definition name="" template="/WEB-INF/layouts/dang_nhap.jsp"/>
+    <definition name="dang-nhap" template="/WEB-INF/layouts/dang_nhap.jsp"/>
+    <definition name="dang-ky" template="/WEB-INF/layouts/dang_ky.jsp"/>
+    <definition name="tim-tai-khoan" template="/WEB-INF/layouts/tim_tai_khoan.jsp"/>
+    <definition name="dat-lai-mat-khau" template="/WEB-INF/layouts/dat_lai_mat_khau.jsp"/>
+    <definition name="nhap-ma-bao-mat" template="/WEB-INF/layouts/nhap_ma_bao_mat.jsp"/>
+
+    <definition name="dieu-khoan" template="/WEB-INF/bodyfragments/dieu_khoan_chinh_sach/view_dieu_khoan.jsp"/>
+    <definition name="chinh-sach" template="/WEB-INF/bodyfragments/dieu_khoan_chinh_sach/view_chinh_sach.jsp"/>
+    <!-- Base Define -->
+
+
+
+    <definition name="base.definition"
+                template="/WEB-INF/layouts/trang_chu.jsp">
+        <put-attribute name="title" value=""/>
+        <put-attribute name="header" value="/WEB-INF/basefragments/header.jsp"/>
+        <put-attribute name="body" value=""/>
+        <put-attribute name="footer" value="/WEB-INF/basefragments/footer.jsp"/>
+    </definition>
+
+    <!-- Danh sách doanh nghiệp  -->
+    <definition name="trang-dau" extends="base.definition">
+        <put-attribute name="title" value="Danh sách doanh nghiệp"/>
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/danh_sach_hang_hoa.jsp"/>
+    </definition>
+
+    <!-- Danh sách doanh nghiệp  -->
+    <definition name="hang-hoa" extends="base.definition">
+        <put-attribute name="title" value="Thông tin hàng hóa"/>
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/quan_ly_hang_hoa/hang_hoa.jsp"/>
+    </definition>
+
+
+    <!-- Danh sách hang hoa  -->
+    <definition name="danh-sach-hang-hoa" extends="base.definition">
+        <put-attribute name="title" value="Danh mục hàng hóa"/>
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/quan_ly_hang_hoa/danh_sach_hang_hoa.jsp"/>
+    </definition>
+
+    <!-- Danh sách hang hoa  -->
+    <definition name="danh-muc-hang-hoa" extends="base.definition">
+        <put-attribute name="title" value="Danh mục hàng hóa"/>
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/quan_ly_hang_hoa/danh_muc_hang_hoa.jsp"/>
+    </definition>
+
+    <!-- Danh sách nhan vien  -->
+    <definition name="thong-tin-nhan-vien" extends="base.definition">
+        <put-attribute name="title" value="Quản lý thông tin nhân viên"/>
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/quan_ly_nhan_vien/thong_tin_nhan_vien.jsp"/>
+    </definition>
+
+    <!-- Danh sách nhà cung cấp  -->
+    <definition name="danh-sach-nha-cung-cap" extends="base.definition">
+        <put-attribute name="title" value="Danh sách nhà cung cấp"/>
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/quan_ly_doi_tac/danh_sach_nha_cung_cap.jsp"/>
+    </definition>
+
+    <!-- Danh sách khach hang  -->
+    <definition name="danh-sach-khach-hang" extends="base.definition">
+        <put-attribute name="title" value="Danh sách nhà cung cấp"/>
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/quan_ly_doi_tac/danh_sach_khach_hang.jsp"/>
+    </definition>
+
+    <!-- Thong tin cong ty  -->
+    <definition name="thong-tin-cong-ty" extends="base.definition">
+        <put-attribute name="title" value="Quản lý thông tin công ty"/>
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/quan_ly_cong_ty/thong_tin_cong_ty.jsp"/>
+    </definition>
+
+    <!-- danh sach chi nhanh -->
+    <definition name="quan-ly-chi-nhanh" extends="base.definition">
+        <put-attribute name="title" value="Quản lý chi nhánh"/>
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/quan_ly_cong_ty/thong_tin_chi_nhanh.jsp"/>
+    </definition>
+
+    <!-- sua dieu khoan -->
+    <definition name="sua-dieu-khoan" extends="base.definition">
+        <put-attribute name="title" value="Sửa điều khoản "/>
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/dieu_khoan_chinh_sach/dieu_khoan.jsp"/>
+    </definition>
+
+    <!-- sua dieu khoan -->
+    <definition name="sua-chinh-sach" extends="base.definition">
+        <put-attribute name="title" value="Sửa điều khoản "/>
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/dieu_khoan_chinh_sach/chinh_sach.jsp"/>
+    </definition>
+
+    <!-- Chat  -->
+    <definition name="chat" extends="base.definition">
+        <put-attribute name="title" value="Chat"/>
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/chat/chat.jsp"/>
+    </definition>
+
+    <!-- Chon hoa don de tra khach hang  -->
+    <definition name="danh-sach-hoa-don-de-tra" extends="base.definition">
+        <put-attribute name="title" value="Danh sách khách hóa đơn"/>
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/quan_ly_giao_dich/tra_hang_cho_khach/danh_sach_phieu_tra_hang_cho_khach.jsp"/>
+    </definition>
+
+    <!-- Hoa don chi tiet sau khi chon 1 hoa don de tra -->
+    <definition name="chi-tiet-hoa-don-de-tra" extends="base.definition">
+        <put-attribute name="title" value="Danh sách khách hóa đơn"/>
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/quan_ly_giao_dich/tra_hang_cho_khach/hoa_don_chi_tiet_de_tra.jsp"/>
+    </definition>
+
+    <!-- Danh sách phieu nhap de tra  -->
+    <definition name="danh-sach-phieu-nhap-de-tra" extends="base.definition">
+        <put-attribute name="title" value="Danh sách phiếu nhập để trả"/>
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/quan_ly_giao_dich/tra_hang_nha_cung_cap/danh_sach_phieu_tra_hang_nhap.jsp"/>
+    </definition>
+
+    <!-- Danh sách phieu nhap chi tiet cua phieu nhap de tra  -->
+    <definition name="phieu-nhap-chi-tiet-de-tra" extends="base.definition">
+        <put-attribute name="title" value="Danh sách phiếu nhập chi tiết để trả"/>
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/quan_ly_giao_dich/tra_hang_nha_cung_cap/phieu_nhap_chi_tiet_de_tra.jsp"/>
+    </definition>
+
+    <!-- Tao hoa don ban hang -->
+    <definition name="tao-hoa-don-ban-hang" extends="base.definition">
+        <put-attribute name="title" value="Tạo hóa đơn bán hàng"/>
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/quan_ly_ban_hang/tao_hoa_don_ban_hang.jsp"/>
+    </definition>
+
+    <!-- Danh sách nhập hàng  -->
+    <definition name="danh-sach-nhap-hang" extends="base.definition">
+        <put-attribute name="title" value="Danh sách nhập hàng"/>
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/quan_ly_giao_dich/nhap_hang/danh_sach_nhap_hang.jsp"/>
+    </definition>
+
+    <!-- Chi tiết nhập hàng  -->
+    <definition name="chi-tiet-nhap-hang" extends="base.definition">
+        <put-attribute name="title" value="Chi tiết nhập hàng"/>
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/quan_ly_giao_dich/nhap_hang/chi_tiet_nhap_hang.jsp"/>
+    </definition>
+
+    <!-- Chi tiết nhập hàng 2 -->
+    <definition name="chi-tiet-nhap-hang-2" extends="base.definition">
+        <put-attribute name="title" value="Chi tiết nhập hàng"/>
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/quan_ly_giao_dich/nhap_hang/chi_tiet_nhap_hang_2.jsp"/>
+    </definition>
+
+    <definition name="nhap-hang-chi-tiet" extends="base.definition">
+        <put-attribute name="title" value="Chi tiết nhập hàng"/>
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/quan_ly_giao_dich/nhap_hang/nhap_hang_chi_tiet.jsp"/>
+    </definition>
+
+
+
+
+    <!-- Danh sách tra khach hàng  -->
+    <definition name="danh-sach-tra-khach" extends="base.definition">
+        <put-attribute name="title" value="Danh sách khách trả hàng"/>
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/thong_ke_bao_cao/quan_ly_tra_hang/danh_sach_tra_khach.jsp"/>
+    </definition>
+
+    <!-- Danh sách hóa đơn  -->
+    <definition name="danh-sach-hoa-don" extends="base.definition">
+        <put-attribute name="title" value="Danh sách hóa đơn"/>
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/quan_ly_ban_hang/danh_sach_hoa_don.jsp"/>
+    </definition>
+    <!-- Chi tiết hóa đơn  -->
+    <definition name="chi-tiet-hoa-don" extends="base.definition">
+        <put-attribute name="title" value="Chi tiết hóa đơn"/>
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/quan_ly_ban_hang/chi_tiet_hoa_don.jsp"/>
+    </definition>
+
+    <!-- Chi tiết hóa đơn  -->
+    <definition name="hoa-don-chi-tiet" extends="base.definition">
+        <put-attribute name="title" value="Chi tiết hóa đơn"/>
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/quan_ly_ban_hang/hoa_don_chi_tiet.jsp"/>
+    </definition>
+
+    <!-- Thiết lập giá  -->
+    <definition name="thiet-lap-gia" extends="base.definition">
+        <put-attribute name="title" value="Thiết lập giá"/>
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/quan_ly_hang_hoa/thiet_lap_gia.jsp"/>
+    </definition>
+
+    <!-- Tong quan  -->
+    <definition name="tong-quan" extends="base.definition">
+        <put-attribute name="title" value="Tổng quan"/>
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/tong_quan/tong_quan.jsp"/>
+    </definition>
+
+
+</tiles-definitions>
