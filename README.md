@@ -1,2 +1,3 @@
 # Embedded-System
-Code for embedded system class
+This is code for embedded system class
+Project name : Face R
